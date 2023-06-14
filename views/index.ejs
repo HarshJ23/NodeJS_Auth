@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <!-- in form , route should be specified in action -->
+        <!-- action specifies which endpoint should be hit once we submit the form  , here contact endpoint is being hit  -->
+        <!-- unless action is not defined , it will hit default route: "/"-->
+        <form method="post" action="/contact"> 
+            <h1>Contact now</h1>
+            <input type="text" name="name" placeholder="name" id="">
+            <input type="email" name="email" placeholder="email" id="">
+            <button type="submit">Send message</button>
+        </form>
+    </main>
+</body>
+</html>
